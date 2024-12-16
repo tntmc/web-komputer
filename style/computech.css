@@ -1173,7 +1173,7 @@ header .search-menu-responsive {
   .footer #register-card{
     border: none;
     border-radius: 1.5em;
-    background-image: url("../../../../ProjectAkhir/public/assets/img/mockup2.jpg");
+    background-image: url("./img/mockup2.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: fill;
