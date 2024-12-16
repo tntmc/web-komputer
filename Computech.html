@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style/computech.css">
+  <title>Computech Store</title>
+</head>
+<body>
+
+  <!--Start Header berupa navbar  -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-xl nav fixed-top mx-auto" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand border-end border-black-subtle text-title" href="#" style="padding-right: 10px; font-weight: 600; font-size: 1.5em;">
+          Computech
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+          <span><i class='bx bx-menu-alt-right'></i></span>
+        </button>
+        <div class="collapse navbar-collapse nav justify-content-start" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-pills justify-content-end">
+            <li class="nav-item" style="margin-top: 10px;">
+            <form class="d-flex search-menu-responsive" role="search">
+              <input class="form-control search-form-responsive" id="search-form" type="search" placeholder="Search Product" aria-label="Search">
+              <button class="btn Search-btn-responsive" type="submit" id="Search-btn"><i class='bx bx-search-alt-2'></i></button>
+            </form>
+            </li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#Home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#Featured">Product</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#Testimoni">Testimoni</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#FAQ">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#Contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" id="add-item-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddCart" aria-controls="offcanvasRight">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" id="notification-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNotification" aria-controls="offcanvasRight">Notification</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="" id="login-menu">Login</a></li>
+            <li class="nav-item" style="margin-top: 10px;">
+            <form class="d-flex search-menu" role="search">
+              <input class="form-control" id="search-form" type="search" placeholder="Search Product" aria-label="Search">
+              <button class="btn" type="submit" id="Search-btn"><i class='bx bx-search-alt-2'></i></button>
+            </form>
+            </li>
+          </ul>
+        </div>
+        <a class="text-center" aria-current="page" href="" id="add-item-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddCart" aria-controls="offcanvasRight"><i class='bx bxs-cart' ></i></a>
+        <a class="text-center" aria-current="page" href="" id="notification-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNotification" aria-controls="offcanvasRight"><i class='bx bxs-bell' ></i></a>
+        <a class="text-center" aria-current="page" href="" id="login-button">Login</a>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddCart" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">keranjang anda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Tidak ada belanjaan yang anda masukan keranjang
+      </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNotification" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Notifikasi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        TIdak ada Notifikasi
+      </div>
+    </div>
+
+  </header>
+  <!--End Header berupa navbar -->
+
+  <!--start home section-->
+  <section id="Home" class="container-fluid mx-auto">
+    <div class="swiper mySwiper2 swiper-h" data-aos="fade-down" data-aos-duration="1000">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <video autoplay loop muted play-inline class="background-clip">
+            <source src="../../public/assets/video/trailer1.mp4" type="video/mp4">
+          </video>
+          <!--<img src="assets/trailer1" id="cover">-->
+          <div class="carousel-caption text-start">
+            <p data-swiper-parallax="-400" class="caption-horizontal">- Special Sale Available -</p>
+            <h1 data-swiper-parallax="-400" class="caption-horizontal">Dell G15 Gaming </h1>
+            <p data-swiper-parallax="-600">Limited time Offer: Up To 50% Discount</p>
+            <a data-swiper-parallax="-200" class="caption-horizontal btn">Discover Now <i class='bx bxs-right-arrow-alt'></i></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <video autoplay loop muted play-inline class="background-clip">
+            <source src="../../public/assets/video/trailer2.mp4" type="video/mp4">
+          </video>
+          <!--<img src="assets/trailer2" id="cover">-->
+          <div class="carousel-caption text-start">
+            <p data-swiper-parallax="-400" class="caption-horizontal">- Special Sale Available -</p>
+            <h1 data-swiper-parallax="-400" class="caption-horizontal">Asus Zenbook DUO</h1>
+            <p data-swiper-parallax="-600">Limited time Offer: Up To 50% Discount</p>
+            <a data-swiper-parallax="-200" class="caption-horizontal btn">Discover Now <i class='bx bxs-right-arrow-alt'></i></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <video autoplay loop muted play-inline class="background-clip">
+            <source src="../../public/assets/video/trailer3.mp4" type="video/mp4">
+          </video>
+          <!--<img src="assets/trailer3" id="cover">-->
+          <div class="carousel-caption text-start">
+            <p data-swiper-parallax="-400" class="caption-horizontal">- Special Sale Available -</p>
+            <h1 data-swiper-parallax="-400" class="caption-horizontal">MSI Katana 17 B13V</h1>
+            <p data-swiper-parallax="-600">Limited time Offer: Up To 50% Discount</p>
+            <a data-swiper-parallax="-200" class="caption-horizontal btn">Discover Now <i class='bx bxs-right-arrow-alt'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!--End Hero / Home Section-->
+
+  <!--start featured section-->
+  <section id="Featured">
+    <div class="container-fluid" id="featured">
+
+      <main class="row mx-auto" id="offer-row">
+        <div class="col-lg-8">
+          <div class="card mb-3" id="offer-card" data-aos="fade-up" data-aos-duration="1200">
+            <div class="card-body" id="offer-card-body">
+              <img src="../../../ProjectAkhir/public/assets/img/Screenshot 2024-09-16 094326.png" class="img-fluid special-offer-img">
+              <div class="offer-caption">
+                <h5><i class='bx bx-category-alt'></i>Special Offer</h5>
+                <h1>Asus Zenbook Duo</h1>
+                <p>Up To 50% Discount</p>
+                <a href="Shop" class="btn">Shop Now <i class='bx bx-cart' ></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <main class="row">
+
+            <div class="col-lg-12">
+              <div class="card mb-3" id="new-product-card" data-aos="fade-up" data-aos-duration="1600">
+                <div class="card-body" id="new-product-card-body">
+                  <div class="swiper5 mySwiper5">
+                    <div class="swiper-wrapper">
+                      <figure class="swiper-slide text-center">
+                        <img src="../../../ProjectAkhir/public/assets/img/Tinta Epson 003.jpg" class="img-fluid new-product-img">
+                      </figure>
+                      <figure class="swiper-slide text-center">
+                        <img src="../../../ProjectAkhir/public/assets/img/Keyboard Logitech K120.jpg" class="img-fluid new-product-img">
+                      </figure>
+                      <figure class="swiper-slide text-center">
+                        <img src="../../../ProjectAkhir/public/assets/img/SSD Sata 128GB VenomRX.jpg" class="img-fluid new-product-img">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="card mb-3" id="categories-card" data-aos="fade-up" data-aos-duration="2000">
+                <article class="card-body" id="categories-card-body">
+                  <h5 class="card-title mb-3"><i class='bx bx-category-alt'></i> Categories</h5>
+
+                  <div class="swiper3 mySwiper3">
+                    <div class="swiper-wrapper">
+                      <figure class="swiper-slide text-center">
+                        <h1><i class='bx bx-laptop'></i></h1>
+                        <p class="fixed-bottom mb-2"><strong>Laptop</strong></p>
+                      </figure>
+                      <figure class="swiper-slide text-center">
+                        <h1><i class='bx bxs-hdd'></i></h1>
+                        <p class="fixed-bottom mb-2"><strong>Drive</strong></p>
+                      </figure>
+                      <figure class="swiper-slide text-center">
+                        <h1><i class='bx bxs-mouse'></i></h1>
+                        <p class="fixed-bottom mb-2"><strong>Mouse</strong></p>
+                      </figure>
+                      <figure class="swiper-slide text-center">
+                        <h1><i class='bx bxs-printer'></i></h1>
+                        <p class="fixed-bottom mb-2"><strong>Ink Printer</strong></p>
+                      </figure>
+                      <figure class="swiper-slide text-center">
+                        <h1><i class='bx bxs-keyboard'></i></h1>
+                        <p class="fixed-bottom mb-2"><strong>Keyboard</strong></p>
+                      </figure>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+          </main>
+        </div>
+      </main>
+
+      <nav class="navbar navbar-expand-sm nav mx-auto border-bottom border-dark" id="nav-featured" data-aos="fade-down" data-aos-duration="1500">
+        <div class="container-fluid">
+          <h5 class="navbar-brand border-end border-dark text-title featured-title" style="padding-right: 10px;">
+            Featured Product
+          </h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdownFeatured" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border: none; ">
+            <span><i class='bx bx-menu-alt-right'></i></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavDropdownFeatured" data-aos="fade-right" data-aos-duration="1700">
+            <ul class="nav nav-underline mb-3 justify-content-end" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active w-100 text-body-tertiary" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">All Products</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-body-tertiary" id="pills-menu1-tab" data-bs-toggle="pill" data-bs-target="#pills-menu1" type="button" role="tab" aria-controls="pills-menu1" aria-selected="false">Laptop</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-body-tertiary" id="pills-menu2-tab" data-bs-toggle="pill" data-bs-target="#pills-menu2" type="button" role="tab" aria-controls="pills-menu2" aria-selected="false">Drive</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-body-tertiary" id="pills-menu3-tab" data-bs-toggle="pill" data-bs-target="#pills-menu3" type="button" role="tab" aria-controls="pills-menu3" aria-selected="false">Mouse</button>
+              </li>
+              <!--<li class="nav-item" role="presentation">
+                <button class="nav-link text-body-tertiary" id="pills-menu4-tab" data-bs-toggle="pill" data-bs-target="#pills-menu4" type="button" role="tab" aria-controls="pills-menu4" aria-selected="false">Keyboard</button>
+              </li>-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--tab home / all product-->
+      <main class="row mx-auto tab-content" id="featured-card-row pills-tabContent">
+        <div class="col tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+          <div class="swiper mySwiper4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="swiper-wrapper">
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Laptop / PC</h5>
+                    </text>
+                    <a id="price" data-price="12.000.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <!--<img src="assets/LenovoIdeapad">-->
+                    <img src="../../../ProjectAkhir/public/assets/img/Lenovo.jpg">
+                    <h5>Lenovo ideapad</h5>
+                    <p><i class='bx bxs-star'></i> 4.9 | 200 Terjual</p>
+                    <a class="btn" data-bs-toggle="modal" data-bs-target="#ProductLaptop1">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 12.000.000</h5>
+                  </div>
+                </div>
+              </figure>
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Drive</h5>
+                    </text>
+                    <a id="price" data-price="45.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <!--<img src="assets/32Giga">-->
+                    <img src="../../../ProjectAkhir/public/assets/img/Flashdisk Sandisk 32GB.jpg">
+                    <h5>Flashdisk Sandisk 32GB</h5>
+                    <p><i class='bx bxs-star'></i> 4.8 | 225 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 45.000</h5>
+                  </div>
+                </div>
+              </figure>
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Drive</h5>
+                    </text>
+                    <a id="price" data-price="30.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <!--<img src="assets/16Giga">-->
+                    <img src="../../../ProjectAkhir/public/assets/img/Flashdisk Sandisk 16GB.jpg">
+                    <h5>Flashdisk Sandisk 16GB</h5>
+                    <p><i class='bx bxs-star'></i> 4.8 | 215 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 30.000</h5>
+                  </div>
+                </div>
+              </figure>
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Drive</h5>
+                    </text>
+                    <a id="price" data-price="200.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <!--<img src="assets/ssdExternal">-->
+                    <img src="../../../ProjectAkhir/public/assets/img/Enclosure SSD External Senix.jpg">
+                    <h5>SSD External Senix</h5>
+                    <p><i class='bx bxs-star'></i> 4.9 | 190 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 200.000</h5>
+                  </div>
+                </div>
+              </figure>
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Mouse</h5>
+                    </text>
+                    <a id="price" data-price="200.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <!--<img src="assets/mouseLogitech">-->
+                    <img src="../../../ProjectAkhir/public/assets/img/Mouse Logitech Kabel B100.jpg">
+                    <h5>Mouse Logitech kabel B 100</h5>
+                    <p><i class='bx bxs-star'></i> 4.7 | 190 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 200.000</h5>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </main>
+      <!--end tab home / all product-->
+
+      <!-- Modal -->
+      <div class="modal fade" id="ProductLaptop1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Product</h5>
+              <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <aside class="card" id="Product-card" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card-body" id="Product-card-body">
+                    <!--modal row-->
+                    <main class="row mx-auto">
+                        <!--gambar produk-->
+                        <div class="col-lg-5 border-end">
+                            <!--<img src="assets/LenovoIdeapad" class="img-fluid rounded-start"  style="height: auto;">-->
+                            <img src="../../../ProjectAkhir/public/assets/img/Lenovo.jpg" class="img-fluid rounded-start"  style="height: auto;">
+                        </div>
+                        <!--gambar produk end-->
+
+                        <!--produk-->
+                        <div class="col-lg-7">
+                            <div class="Product-detail-card">
+                                <div class="Product-detail-card-body">
+                                    <h5 class="text-uppercase">Laptop Lenovo Ideapad Slim</h5>
+                                    <ul class="list-unstyled d-flex">
+                                      <li>
+                                        <p class="text-body"><i class='bx bxs-star'></i> Rating 4.9 / 5 </p>
+                                      </li>
+                                      <li>
+                                        <p class="text-body"> 200 Terjual </p>
+                                      </li>
+                                      <li>
+                                        <p class="text-body"> Stok tersisa <span class="text-body" id="#stok">4</span></p>
+                                      </li>
+                                    </ul>
+                                    <h5 style="color: rgb(37, 232, 40); font-size: 2.25em; font-weight: 600;">Rp 12.000.000</h5>
+
+                                    <!--produk tablist-->
+                                    <ul class="nav nav-pills mb-3 justify-content-start mx-auto" id="pills-tab" role="tablist" style="background: rgb(250, 250, 250); margin: 10px; padding: 10px; border: none; border-radius: 1.25em; margin-top: 2.5em; margin-bottom: 1.25em; box-shadow: rgba(66, 66, 66, 0.15) 0px 0px 25px; width: 100%;">
+                                      <li class="nav-item" role="presentation">
+                                        <button class="nav-link active w-100" id="pills-detail-tab" data-bs-toggle="pill" data-bs-target="#pills-detail" type="button" role="tab" aria-controls="pills-detail" aria-selected="false">Detail</button>
+                                      </li>
+                                      <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-spesifikasi-tab" data-bs-toggle="pill" data-bs-target="#pills-spesifikasi" type="button" role="tab" aria-controls="pills-spesifikasi" aria-selected="false">Spesifikasi</button>
+                                      </li>
+                                      <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-transaksi-tab" data-bs-toggle="pill" data-bs-target="#pills-transaksi" type="button" role="tab" aria-controls="pills-transaksi" aria-selected="false">Transaksi</button>
+                                      </li>
+                                    </ul>
+                                     <!--produk tablist end-->
+
+                                    <!--produk tab-content-->
+                                    <div class="tab-content" id="pills-tabContent">
+                                      <div class="tab-pane fade show active" id="pills-detail" role="tabpanel" aria-labelledby="pills-detail" tabindex="0">
+                                           <h1 class="title mb-3">Detail Produk</h1>
+                                           <main class="row" id="detail-row-tab-content" style="max-height: 7.5em; overflow-y: auto;">
+                                               <div class="col-md-12" id="detail-col-tab-content">
+                                                   <p class="text" style="font-size: 1.25em;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, reiciendis, delectus facilis ea aliquid enim eos inventore ipsum perspiciatis atque nihil dolor maiores et quibusdam possimus maxime sit voluptatibus.</p>
+                                               </div>
+                                           </main>
+                                      </div>
+
+                                      <div class="tab-pane fade show" id="pills-spesifikasi" role="tabpanel" aria-labelledby="pills-spesifikasi" tabindex="0">
+                                          <h1 class="title">Spesifikasi Produk</h1>
+                                          <p class="subtitle mb-3" style="font-size: 1.25em;">Berikut adalah daftar spesifikasi Lenovo ideapad slim</p>
+                                           <main class="row" id="detail-row-tab-content" style="max-height: 10em; overflow-y: auto;">
+                                               <div class="col-md-12 mb-3" id="detail-col-tab-content">
+                                                   <h5 class="text-title mb-2">Umum</h5>
+                                                   <ul class="list mb-3">
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Color: Cosmic Gray</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Processor: Intel Core i5-12400F</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Memory: 16GB</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">OS: Windows 11 Home</p>
+                                                     </li>
+                                                   </ul>
+                                               </div>
+
+                                               <div class="col-md-12 mb-3" id="detail-col-tab-content">
+                                                   <h5 class="text-title mb-2">Lengkap</h5>
+                                                   <ul class="list mb-3">
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Display: 15.6" FHD (1920 x 1080) 60Hz</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Weight: 2.1kg</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Dimensions: 36.2 x 27.6 x 2.3 cm</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Keyboard: Full Size, Backlit, 101 Key, 2.4GHz</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Touchpad: 1.5 Inch, 2000 DPI, 100000:1</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Touchscreen: 1.5 Inch, 2000 DPI, 100000:1</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Webcam: 720p HD</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Audio: Realtek ALC257</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Graphics: Intel Iris Xe Graphics</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Ports: 1 x USB 3.2 Gen 2 Type-C, 1 x USB 3.2 Gen 2 Type-A, 1 x USB 2.0, 1 x HDMI 2.0, 1 x RJ45, 1 x 3.5mm</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Connectivity: Wi-Fi 6, Bluetooth 5.1, 2 x USB-C, 1 x USB-A, 1 x HDMI, 1 x RJ45, 1 x 3.5mm</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Size: 36.2 x 27.6 x 2.3 cm</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Battery: 6 Cell, 48 Wh</p>
+                                                     </li>
+                                                     <li>
+                                                       <p style="margin-bottom: 0px;">Warranty: 1 Year</p>
+                                                     </li>
+                                                   </ul>
+                                               </div>
+                                           </main>
+                                      </div>
+
+                                      <div class="tab-pane fade show" id="pills-transaksi" role="tabpanel" aria-labelledby="pills-transaksi" tabindex="0">
+                                          <div class="card" id="transaction-card">
+                                              <div class="card-body" id="transaction-card-body">
+                                                  <main class="row">
+                                                      <div class="col-md-5 mb-3 border-end">
+                                                          <h5 class="text-title mb-3">Atur Jumlah beli</h5>
+                                                          <label class="text-body mb-3" id="countLabel" style="font-size: 1.5em; font-weight: 600;">0</label>
+                                                          <main class="row">
+                                                            <div class="col-md-12">
+                                                                <a class="btn" id="decreaseBtn">-</a>
+                                                                <a class="btn" id="resetBtn">Batalkan</a>
+                                                                <a class="btn" id="increaseBtn">+</a>
+                                                            </div>
+                                                          </main>
+                                                      </div>
+
+                                                      <div class="col-md-7 mb-3">
+                                                          <h5 class="text-title mb-3">Subtotal </h5>
+                                                          <h5 class="text-body price" style="font-size: 1.75em; font-weight: 600;">Rp <span id="priceLabel" class="price">12000000</span></h5>
+                                                      </div>
+
+                                                      <div class="col-md-12 d-flex justify-content-end">
+                                                          <a class="btn" id="add-button">Tambah ke keranjang <i class="bx bx-cart"></i></a>
+                                                          <a class="btn" id="buy-button">Beli <i class='bx bx-wallet-alt' ></i></a>
+                                                      </div>
+
+                                                  </main>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <!--produk tab-content end-->
+
+                                </div>
+                            </div>
+                        </div>
+                         <!--produk end-->
+                    </main>
+                    <!--modal row end-->
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--modal end-->
+
+
+      <!--tab 1 / laptop product-->
+      <main class="row mx-auto tab-content" id="featured-card-row pills-tabContent">
+        <div class="col tab-pane fade show" id="pills-menu1" role="tabpanel" aria-labelledby="pills-menu1-tab" tabindex="0">
+
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper">
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Laptop / PC</h5>
+                    </text>
+                    <a id="price" data-price="12.000.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <img src="assets/LenovoIdeapad">
+                    <h5>Lenovo ideapad</h5>
+                    <p><i class='bx bxs-star'></i> 4.9 | 200 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 12.000.000</h5>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </main>
+      <!--end tab 1 / laptop product-->
+
+      <!--tab 2 / drive product-->
+      <main class="row mx-auto tab-content" id="featured-card-row pills-tabContent">
+        <div class="col tab-pane fade show" id="pills-menu2" role="tabpanel" aria-labelledby="pills-menu2-tab" tabindex="0">
+
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper">
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Drive</h5>
+                    </text>
+                    <a id="price" data-price="45.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <img src="assets/32Giga">
+                    <h5>Flashdisk Sandisk 32GB</h5>
+                    <p><i class='bx bxs-star'></i> 4.8 | 225 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 45.000</h5>
+                  </div>
+                </div>
+              </figure>
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Drive</h5>
+                    </text>
+                    <a id="price" data-price="30.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <img src="assets/16Giga">
+                    <h5>Flashdisk Sandisk 16GB</h5>
+                    <p><i class='bx bxs-star'></i> 4.8 | 215 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 30.000</h5>
+                  </div>
+                </div>
+              </figure>
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Drive</h5>
+                    </text>
+                    <a id="price" data-price="200.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <img src="assets/ssdExternal">
+                    <h5>SSD External Senix</h5>
+                    <p><i class='bx bxs-star'></i> 4.9 | 190 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 200.000</h5>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </main>
+      <!--end tab 2 / drive product-->
+
+      <!--tab 3 / mouse product-->
+      <main class="row mx-auto tab-content" id="featured-card-row pills-tabContent">
+        <div class="col tab-pane fade show" id="pills-menu3" role="tabpanel" aria-labelledby="pills-menu3-tab" tabindex="0">
+
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper">
+              <figure class="swiper-slide">
+                <div class="card" id="featured-card">
+                  <div class="card-header" id="featured-card-header">
+                    <text class="see-price">
+                      <h5>Type: Mouse</h5>
+                    </text>
+                    <a id="price" data-price="200.000" href="Shop"><i class='bx bx-cart'></i></a>
+                  </div>
+                  <div class="card-body" id="featured-card-body">
+                    <img src="assets/mouseLogitech">
+                    <h5>Mouse Logitech kabel B 100</h5>
+                    <p><i class='bx bxs-star'></i> 4.7 | 190 Terjual</p>
+                    <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 200.000</h5>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </main>
+      <!--end tab 3 / mouse product-->
+
+      <nav class="navbar navbar-expand-sm nav mx-auto border-bottom border-dark" id="nav-featured" data-aos="fade-down" data-aos-duration="2200">
+        <div class="container-fluid">
+          <h5 class="navbar-brand border-end border-dark text-title featured-title" style="padding-right: 10px;">
+            All Product
+          </h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdownFeatured" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border: none; ">
+            <span><i class='bx bx-menu-alt-right'></i></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavDropdownFeatured" data-aos="fade-right" data-aos-duration="1700">
+            <ul class="nav nav-underline mb-3 justify-content-end" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active w-100 text-body-tertiary" id="pills-all-product-tab" data-bs-toggle="pill" data-bs-target="#pills-all-product" type="button" role="tab" aria-controls="pills-all-product" aria-selected="false">All Products</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-body-tertiary" id="pills-new-product-tab" data-bs-toggle="pill" data-bs-target="#pills-new-product" type="button" role="tab" aria-controls="pills-new-product" aria-selected="false">New Product</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-body-tertiary" id="pills-featured-product-tab" data-bs-toggle="pill" data-bs-target="#pills-fetured-product" type="button" role="tab" aria-controls="pills-featured-product" aria-selected="false">Feautred Product</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="row mx-auto tab-content" id="featured-card-row pills-tabContent">
+        <div class="col tab-pane fade show active" id="pills-all-product" role="tabpanel" aria-labelledby="pills-all-product-tab" tabindex="0">
+
+          <main class="row mx-auto">
+
+            <div class="col-md-12">
+              <div class="swiper mySwiper6" data-aos="fade-up" data-aos-duration="2400">
+                <div class="swiper-wrapper">
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Laptop / PC</h5>
+                        </text>
+                        <a id="price" data-price="12.000.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/LenovoIdeapad">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Lenovo.jpg">
+                        <h5>Lenovo ideapad</h5>
+                        <p><i class='bx bxs-star'></i> 4.9 | 200 Terjual</p>
+                        <a class="btn" data-bs-toggle="modal" data-bs-target="#ProductLaptop1">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 12.000.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Drive</h5>
+                        </text>
+                        <a id="price" data-price="45.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/32Giga">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Flashdisk Sandisk 32GB.jpg">
+                        <h5>Flashdisk Sandisk 32GB</h5>
+                        <p><i class='bx bxs-star'></i> 4.8 | 225 Terjual</p>
+                        <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 45.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Drive</h5>
+                        </text>
+                        <a id="price" data-price="30.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/16Giga">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Flashdisk Sandisk 16GB.jpg">
+                        <h5>Flashdisk Sandisk 16GB</h5>
+                        <p><i class='bx bxs-star'></i> 4.8 | 215 Terjual</p>
+                        <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 30.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Drive</h5>
+                        </text>
+                        <a id="price" data-price="200.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/ssdExternal">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Enclosure SSD External Senix.jpg">
+                        <h5>SSD External Senix</h5>
+                        <p><i class='bx bxs-star'></i> 4.9 | 190 Terjual</p>
+                        <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 200.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Mouse</h5>
+                        </text>
+                        <a id="price" data-price="200.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/mouseLogitech">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Mouse Logitech Kabel B100.jpg">
+                        <h5>Mouse Logitech kabel B 100</h5>
+                        <p><i class='bx bxs-star'></i> 4.7 | 190 Terjual</p>
+                        <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 200.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="swiper mySwiper6" data-aos="fade-up" data-aos-duration="2400">
+                <div class="swiper-wrapper">
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Laptop / PC</h5>
+                        </text>
+                        <a id="price" data-price="12.000.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/LenovoIdeapad">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Lenovo.jpg">
+                        <h5>Lenovo ideapad</h5>
+                        <p><i class='bx bxs-star'></i> 4.9 | 200 Terjual</p>
+                        <a class="btn" data-bs-toggle="modal" data-bs-target="#ProductLaptop1">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 12.000.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Drive</h5>
+                        </text>
+                        <a id="price" data-price="45.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/32Giga">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Flashdisk Sandisk 32GB.jpg">
+                        <h5>Flashdisk Sandisk 32GB</h5>
+                        <p><i class='bx bxs-star'></i> 4.8 | 225 Terjual</p>
+                        <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 45.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Drive</h5>
+                        </text>
+                        <a id="price" data-price="30.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/16Giga">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Flashdisk Sandisk 16GB.jpg">
+                        <h5>Flashdisk Sandisk 16GB</h5>
+                        <p><i class='bx bxs-star'></i> 4.8 | 215 Terjual</p>
+                        <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 30.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Drive</h5>
+                        </text>
+                        <a id="price" data-price="200.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/ssdExternal">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Enclosure SSD External Senix.jpg">
+                        <h5>SSD External Senix</h5>
+                        <p><i class='bx bxs-star'></i> 4.9 | 190 Terjual</p>
+                        <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 200.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <div class="card" id="featured-card">
+                      <div class="card-header" id="featured-card-header">
+                        <text class="see-price">
+                          <h5>Type: Mouse</h5>
+                        </text>
+                        <a id="price" data-price="200.000" href="Shop"><i class='bx bx-cart'></i></a>
+                      </div>
+                      <div class="card-body" id="featured-card-body">
+                        <!--<img src="assets/mouseLogitech">-->
+                        <img src="../../../ProjectAkhir/public/assets/img/Mouse Logitech Kabel B100.jpg">
+                        <h5>Mouse Logitech kabel B 100</h5>
+                        <p><i class='bx bxs-star'></i> 4.7 | 190 Terjual</p>
+                        <a class="btn">Lihat detail ></a><h5 class="float-end" style="color: rgb(37, 232, 40); font-size: 1.25em;">Rp 200.000</h5>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+          </main>
+
+        </div>
+      </main>
+      <!--end tab home / all product-->
+
+
+
+    </div>
+  </section>
+  <!--End featured section-->
+
+  <!--Start Testimoni Section-->
+  <section id="Testimoni">
+    <div class="container-fluid" id="testimoni">
+
+      <div class="testimoni-title text-center">
+        <h1>Computech and customers</h1>
+        <h5>See what our customer say about us</h5>
+      </div>
+
+      <main class="row mx-auto">
+        <div class="col-xl-4 col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="500">
+          <div class="card" id="testimoni-card">
+            <div class="card-header" id="testimoni-card-header">
+              <div class="profile">
+                <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"/>
+              </div>
+              <div class="profile-name">
+                <h5>Person_name1</h5>
+                <p>@account_name</p>
+              </div>
+            </div>
+            <div class="card-body" id="testimoni-card-body">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <h5>User Rating |</h5>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+              </ul>
+              <p>
+                <i class='bx bxs-quote-alt-left'></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, reiciendis, delectus facilis ea aliquid enim eos inventore ipsum perspiciatis atque nihil dolor maiores et quibusdam possimus maxime sit voluptatibus.
+                <i class='bx bxs-quote-alt-right'></i>
+              </p>
+            </div>
+            <div class="card-footer" id="testimoni-card-footer">
+               <h5 class="card-text">Commented: <small class="text-body-secondary"> A day ago</small></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="500">
+          <div class="card" id="testimoni-card">
+            <div class="card-header" id="testimoni-card-header">
+              <div class="profile">
+                <img src="https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/768/2018/08/glasses-american-man-20s-hipster.jpg"/>
+              </div>
+              <div class="profile-name">
+                <h5>Person_name2</h5>
+                <p>@account_name</p>
+              </div>
+            </div>
+            <div class="card-body" id="testimoni-card-body">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <h5>User Rating |</h5>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star-half'></i></p>
+                </li>
+              </ul>
+              <p>
+                <i class='bx bxs-quote-alt-left'></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, reiciendis, delectus facilis ea aliquid enim eos inventore ipsum perspiciatis atque nihil dolor maiores et quibusdam possimus maxime sit voluptatibus.
+                <i class='bx bxs-quote-alt-right'></i>
+              </p>
+            </div>
+            <div class="card-footer" id="testimoni-card-footer">
+               <h5 class="card-text">Commented: <small class="text-body-secondary"> 3 days ago</small></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="500">
+          <div class="card" id="testimoni-card">
+            <div class="card-header" id="testimoni-card-header">
+              <div class="profile">
+                <img src="https://htmlstream.com/preview/unify-v2.6.2/assets/img-temp/400x450/img5.jpg"/>
+              </div>
+              <div class="profile-name">
+                <h5>Person_name3</h5>
+                <p>@account_name</p>
+              </div>
+            </div>
+            <div class="card-body" id="testimoni-card-body">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <h5>User Rating |</h5>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star-half'></i></p>
+                </li>
+              </ul>
+              <p>
+                <i class='bx bxs-quote-alt-left'></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, reiciendis, delectus facilis ea aliquid enim eos inventore ipsum perspiciatis atque nihil dolor maiores et quibusdam possimus maxime sit voluptatibus.
+                <i class='bx bxs-quote-alt-right'></i>
+              </p>
+            </div>
+            <div class="card-footer" id="testimoni-card-footer">
+               <h5 class="card-text">Commented: <small class="text-body-secondary"> 1 weeks ago</small></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card" id="testimoni-card">
+            <div class="card-header" id="testimoni-card-header">
+              <div class="profile">
+                <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"/>
+              </div>
+              <div class="profile-name">
+                <h5>Person_name4</h5>
+                <p>@account_name</p>
+              </div>
+            </div>
+            <div class="card-body" id="testimoni-card-body">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <h5>User Rating |</h5>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+              </ul>
+              <p>
+                <i class='bx bxs-quote-alt-left'></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, reiciendis, delectus facilis ea aliquid enim eos inventore ipsum perspiciatis atque nihil dolor maiores et quibusdam possimus maxime sit voluptatibus.
+                <i class='bx bxs-quote-alt-right'></i>
+              </p>
+            </div>
+            <div class="card-footer" id="testimoni-card-footer">
+               <h5 class="card-text">Commented: <small class="text-body-secondary"> 2 weeks ago</small></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card" id="testimoni-card">
+            <div class="card-header" id="testimoni-card-header">
+              <div class="profile">
+                <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"/>
+              </div>
+              <div class="profile-name">
+                <h5>Person_name5</h5>
+                <p>@account_name</p>
+              </div>
+            </div>
+            <div class="card-body" id="testimoni-card-body">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <h5>User Rating |</h5>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+              </ul>
+              <p>
+                <i class='bx bxs-quote-alt-left'></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, reiciendis, delectus facilis ea aliquid enim eos inventore ipsum perspiciatis atque nihil dolor maiores et quibusdam possimus maxime sit voluptatibus.
+                <i class='bx bxs-quote-alt-right'></i>
+              </p>
+            </div>
+            <div class="card-footer" id="testimoni-card-footer">
+               <h5 class="card-text">Commented: <small class="text-body-secondary"> 1 Month ago</small></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card" id="testimoni-card">
+            <div class="card-header" id="testimoni-card-header">
+              <div class="profile">
+                <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"/>
+              </div>
+              <div class="profile-name">
+                <h5>Person_name6</h5>
+                <p>@account_name</p>
+              </div>
+            </div>
+            <div class="card-body" id="testimoni-card-body">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <h5>User Rating |</h5>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star'></i></p>
+                </li>
+                <li>
+                  <p><i class='bx bxs-star-half'></i></p>
+                </li>
+              </ul>
+              <p>
+                <i class='bx bxs-quote-alt-left'></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores, reiciendis, delectus facilis ea aliquid enim eos inventore ipsum perspiciatis atque nihil dolor maiores et quibusdam possimus maxime sit voluptatibus.
+                <i class='bx bxs-quote-alt-right'></i>
+              </p>
+            </div>
+            <div class="card-footer" id="testimoni-card-footer">
+               <h5 class="card-text">Commented: <small class="text-body-secondary"> 2 Months ago</small></h5>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+  </section>
+  <!--End Testimoni Section-->
+
+  <!--Start FAQ section-->
+  <section id="FAQ">
+    <div class="container-fluid" id="faq">
+      <!--<div class="faq-title text-center">
+        <h1>Frequently Asked Question</h1>
+        <h5>Penasaran dengan pertanyaan yang sering diajukan? Cek disini</h5>
+      </div>-->
+      <div class="card mb-3 mx-auto" style="max-width: 80%; border-radius: 1.25em" id="faq-card"  data-aos="fade-up" data-aos-duration="1000">
+        <div class="row g-0" id="faq-row">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1500">
+            <!--<img src="assets/mockup" class="img-fluid" alt="computech" style="border-radius: 1.25em; width: 100%; height: 100%;">-->
+            <div class="faq-title text-start mb-3">
+              <h1>Frequently Asked Question</h1>
+              <h5>Penasaran dengan pertanyaan yang sering diajukan? Cek disini</h5>
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-left" data-aos-duration="1500">
+            <div class="card-body" id="faq-card-body">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="accordion-button">
+                      Apa saja keunggulan Computech Store?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Computech memilki beberapa layanan seperti services berbagai device, berbagai device tersedia dan siap antar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="accordion-button">
+                      Apakah pelayanan nya Ramah?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Untuk Pelayananya sangat ramah dan cepat dalam penanganan. Hal ini juga bisa dibuktikan dengan testimoni para pelanggan Computech.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="accordion-button">
+                      Bisakah pesan apabila di luar Kota ?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Ya, Computech dapat melakukan pesanan luar kota, namun layanan ini masih terus dalam pengembangan agar konsumen luar kota dapat dijangkau.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" id="accordion-button">
+                      Apa saja yang dijual di computech?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Device seperti laptop, mouse, komponen PC, Keyboard, speaker, dll. Selalu dengan kualitas yang baik tentunya.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End FAQ section-->
+
+  <!--Start Contact Section-->
+  <section id="Contact">
+    <div class="container-fluid" id="contact">
+      <!--judul about-->
+      <div class="contact-title text-center">
+        <h1>Contact Person</h1>
+        <h5>Tanyakan apapun tentang komputer dan device kepada Computech</h5>
+
+      </div>
+
+      <!--row about-->
+      <div class="row mx-auto" id="contact-card-row">
+        <!--Card foto-->
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card" id="contact-card-img">
+            <div class="card-body" id="contact-card-body-img" style="height: 100%;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" alt="computer" class="img-fluid rounded-start">
+            </div>
+          </div>
+        </div>
+
+        <!--Card penjelasan-->
+        <div class="col-sm-8 mb-3 mb-sm-0">
+          <div class="card" id="contact-card">
+            <div class="card-body" id="contact-card-body">
+              <h1 class="contact-card-title">Tanyakan langsung pada Kami</h1>
+              <div class="form-floating mb-3" id="email">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-floating" id="password">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating" id="phone-number">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Your phone number">
+                    <label for="floatingInput">No Telp</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-floating" id="comment">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+              <button type="submit" class="btn" id="submit" style="color: white; background: rgb(138, 160, 245);">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Contact Section-->
+
+
+  <section class="footer">
+    <!-- Footer -->
+    <footer class="">
+      <!-- Grid container -->
+      <div class="container-fluid mx-auto p-4">
+        <!--Grid row 1-->
+        <main class="row mx-auto">
+          <div class="col-lg-12 col-md-12 mb-3">
+              <div class="card" id="register-card">
+                  <div class="card-body" id="register-card-body">
+                      <main class="row" style="width: 100% !important; margin: 0;">
+                        <div class="col-xl-5 col-lg-12 mb-3">
+                            <h1 class="text-title mb-3">New in Computech?</h1>
+                            <h5 class="text">Sign Up for information about computech and get 25% Discount for first order</h5>
+                        </div>
+
+                        <div class="col-xl-7 col-lg-12 mb-3">
+                            <div class="input-group">
+                              <input type="email" class="form-control" placeholder="youremail@example.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+                              <button class="btn" type="button" id="button-addon2">Sign Up</button>
+                            </div>
+                        </div>
+                      </main>
+                  </div>
+              </div>
+          </div>
+        </main>
+        <!--Grid row 1-->
+
+        <!--Grid row 2-->
+        <main class="row mx-auto">
+
+            <div class="col-xl-5 col-lg-7 col-md-12 mb-3">
+              <div class="card mb-3" id="profile-footer-card">
+                <article class="card-body" id="profile-footer-card-body">
+                    <h1 class="text-uppercase">Computech</h1>
+                    <h5>
+                      Toko komputer serba ada dengan berbagai macam device seperti komputer, laptop, mouse dll.
+                    </h5>
+                </article>
+              </div>
+              <!--Grid row 3-->
+              <main class="row" style="width: 100% !important; margin: 0;">
+                <div class="col-xxl-12">
+                  <div class="card" id="connected-card">
+                    <div class="card-body" id='connected-card-body'>
+                      <ul class="list-unstyled d-flex">
+                        <li>
+                          <h5>Get connected with Us:</h5>
+                        </li>
+                        <li>
+                          <a href="#!" class="text-body" style="text-decoration: none;"><i class='bx bxl-facebook'></i></a>
+                        </li>
+                        <li>
+                          <a href="#!" class="text-body" style="text-decoration: none;"><i class='bx bxl-google'></i></a>
+                        </li>
+                        <li>
+                          <a href="#!" class="text-body" style="text-decoration: none;"><i class='bx bxl-instagram-alt'></i></a>
+                        </li>
+                        <li>
+                          <a href="#!" class="text-body" style="text-decoration: none;"><i class='bx bxl-whatsapp' ></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </main>
+              <!--Grid row 3-->
+            </div>
+
+            <div class="col-xl-3 col-lg-5 col-md-6 mb-3">
+              <aside class="card" id="Schedule-card">
+                <div class="card-body" id="Schedule-card-body">
+                    <h5 class="text-uppercase">Operational Schedule</h5>
+                    <ul class="list-unstyled mb-3" style="margin-block: 2em;">
+                      <li>
+                        <p style="margin-block: 0.5em;"><i class='bx bx-time-five'></i> Senin - Jumat <span class="float-end" style="font-size: 0.75em; background: rgb(37, 232, 40); margin: 0.5em; color: white; padding-inline: 0.25em; border-radius: 0.75em;">Open</span></p>
+                      </li>
+                      <li>
+                        <p style="margin-block: 0.5em;"><i class='bx bx-time-five'></i> Sabtu <span class="float-end" style="font-size: 0.75em; background: rgb(37, 232, 40); margin: 0.5em; color: white; padding-inline: 0.25em; border-radius: 0.75em;">Open</span></p>
+                      </li>
+                      <li>
+                        <p style="margin-block: 0.5em;"><i class='bx bx-time-five'></i> Minggu <span class="float-end" style="font-size: 0.75em; background: rgb(240, 97, 97); margin: 0.5em; color: white; padding-inline: 0.25em; border-radius: 0.75em;">Closed</span></p>
+                      </li>
+                    </ul>
+                    <a class="btn Schedule-btn" data-bs-toggle="modal" data-bs-target="#ScheduleModal">More Schedule info ></a>
+                </div>
+              </aside>
+            </div>
+
+            <!--schedule modal-->
+            <div class="modal fade" id="ScheduleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-md-down">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <aside class="card" id="Schedule-card">
+                        <div class="card-body" id="Schedule-card-body">
+                            <h5 class="text-uppercase">Operational Schedule</h5>
+                            <ul class="list-unstyled mb-3" style="margin-block: 2em;">
+                              <li>
+                                <p style="margin-block: 0.5em;"><i class='bx bx-time-five'></i> Senin - Jumat <span class="float-end" style="font-size: 0.75em; background: rgb(37, 232, 40); margin: 0.5em; color: white; padding-inline: 0.25em; border-radius: 0.75em;">07.30 - 17.30 WIB</span></p>
+                              </li>
+                              <li>
+                                <p style="margin-block: 0.5em;"><i class='bx bx-time-five'></i> Sabtu <span class="float-end" style="font-size: 0.75em; background: rgb(37, 232, 40); margin: 0.5em; color: white; padding-inline: 0.25em; border-radius: 0.75em;">07.30 - 17.00 WIB</span></p>
+                              </li>
+                              <li>
+                                <p style="margin-block: 0.5em;"><i class='bx bx-time-five'></i> Minggu <span class="float-end" style="font-size: 0.75em; background: rgb(240, 97, 97); margin: 0.5em; color: white; padding-inline: 0.25em; border-radius: 0.75em;">Closed</span></p>
+                              </li>
+                            </ul>
+                        </div>
+                      </aside>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-4 col-lg-12 col-md-6 mb-3">
+              <aside class="card" id="maps-card">
+                <div class="card-body" id="maps-card-body">
+                  <h5 class="text-uppercase">Lokasi Computech</h5>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4692.547290114744!2d112.43468407574613!3d-7.470062373644385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780d8e8497c34d%3A0x7bc520d926d76b51!2sservice%20printer%20-%20service%20laptop%20-%20Computech!5e1!3m2!1sid!2sid!4v1727343501780!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </aside>
+            </div>
+
+        </main>
+        <!--Grid row 2-->
+
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © 2024 Copyright: Computech Store
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./script/computech.js"></script>
+</body>
+</html>
