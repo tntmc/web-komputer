@@ -896,7 +896,7 @@ header .search-menu-responsive {
 #testimoni {
   font-family: "Plus Jakarta Sans", sans-serif;
   /*background: rgb(242, 242, 242);*/
-  background-image: url("../../../../ProjectAkhir/public/assets/img/Texture1.jpg");
+  background-image: url("./img/Texture1.jpg");
 }
 
 .testimoni-title h1 {
@@ -1080,7 +1080,7 @@ header .search-menu-responsive {
 
 /*untuk bagian contact pada web*/
 #Contact {
-  background-image: url("../../../../ProjectAkhir/public/assets/img/Texture1.jpg");
+  background-image: url("./img/Texture1.jpg");
   padding-bottom: 25px;
   font-family: "Plus Jakarta Sans", sans-serif;
   padding-top: 25px;
